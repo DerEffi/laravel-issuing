@@ -1,5 +1,5 @@
 {
-    "name": "dereffi/issuing",
+    "name": "DerEffi/Issuing",
     "description": "PHP package built for Laravel 5.* to save creator last updator and deletor in database tables",
     "type": "library",
     "license": "MIT",
@@ -9,8 +9,7 @@
         "psr-4": {
             "DerEffi\\Issuing\\": "src/"
         }
-    },
-    "autoload-dev": {
+    },"autoload-dev": {
         "psr-4": {
             "DerEffi\\Issuing\\": "src/"
         }
