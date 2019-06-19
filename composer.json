@@ -10,6 +10,11 @@
             "DerEffi\\Issuing\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "DerEffi\\Issuing\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
