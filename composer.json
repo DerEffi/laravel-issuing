@@ -22,7 +22,7 @@
         }
     },
     "scripts": {
-        "post-package-cmd": [
+        "post-install-cmd": [
             "php artisan vendor:publish --tag=dereffi-issuing"
         ]
     }
