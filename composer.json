@@ -1,9 +1,9 @@
 {
-    "name": "dereffi/issuing",
+    "name": "DerEffi/Issuing",
     "description": "PHP package built for Laravel 5.* to save creator last updator and deletor in database tables",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "require": {},
     "autoload": {
         "psr-4": {
@@ -16,8 +16,8 @@
                 "DerEffi\\Issuing\\IssuingServiceProvider"
             ],
             "aliases": {
-                "DerEffi\\Issuable": "DerEffi\\Issuing\\Helper\\Issuable",
-                "DerEffi\\IssuerColumns": "DerEffi\\Issuing\\Helper\\IssuerColumns"
+                "DerEffi\\Issuable": "DerEffi\\Issuing\\Issuable",
+                "DerEffi\\IssuerColumns": "DerEffi\\Issuing\\IssuerColumns"
             }
         }
     }

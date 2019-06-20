@@ -8,7 +8,7 @@ class IssuingServiceProvider extends ServiceProvider {
 
     public function boot() {
 
-        $this->publishes([ __DIR__.'/Config/issuing.php' => config_path('issuing.php') ]);
+        $this->publishes([ __DIR__.'/Config/issuing.php' => config_path('issuing.php') ], 'issuable');
 
     }
 
