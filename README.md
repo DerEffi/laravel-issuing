@@ -22,6 +22,10 @@ the latest version of the Issuing Package run the following command:
 
     composer require dereffi/issuing
 
+After the installation you can run following command to publish the config file
+
+    php artisan vendor:publish --tag=dereffi-issuing
+
 ## Usage
 
 #### CONFIGURATION
