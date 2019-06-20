@@ -42,7 +42,7 @@ Following exaple with the default laravel users migration file:
 
     <?php
 
-    use DerEffi\IssuerColumns;          // <-- Import
+    use Dereffi\Issuing\IssuerColumns;              // <-- Import
 
     use Illuminate\Support\Facades\Schema;
     use Illuminate\Database\Schema\Blueprint;
@@ -66,7 +66,7 @@ Following exaple with the default laravel users migration file:
                 $table->rememberToken();
                 $table->timestamps();
 
-                IssuerColumns($table);      // <-- auto adding the columns
+                IssuerColumns::create($table);      // <-- auto adding the columns
 
             });
         }
@@ -86,14 +86,14 @@ Following exaple with the default laravel users migration file:
 #### Models
 
 To auto save the issuer id with the element on creating, updationg or deleting you have to use
-the `DerEffi\Issuable` Trait in the model files like the following example with the default laravel
+the `Dereffi\Issuing\Issuable` Trait in the model files like the following example with the default laravel
 User Model:
 
     <?php
 
     namespace App;
 
-    use DerEffi\Issuable;               // <-- add this line to Import the Trait
+    use Dereffi\Issuing\Issuable;               // <-- add this line to Import the Trait
 
     use Illuminate\Notifications\Notifiable;
     use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -101,7 +101,7 @@ User Model:
 
     class User extends Authenticatable
     {
-        use Notifiable, Issuable;       // <-- add the Issuable Trait to the Model
+        use Notifiable, Issuable;               // <-- add the Issuable Trait to the Model
 
 
 ## LICENSE

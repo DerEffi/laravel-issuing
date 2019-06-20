@@ -1,15 +1,15 @@
 <?php
 
-namespace DerEffi\Issuing\Helper;
+namespace Dereffi\Issuing;
 
 use Illuminate\Database\Schema\Blueprint;
 
 class IssuerColumns {
 
-    public function __contruct(Blueprint &$table) {
+    public static function create(Blueprint &$table) {
 
         $issuerTable = config('issuing.table');
-        $issuerIdColumn = config('issuing.column');
+        $issuerIdColumn = config('issuing.id_column');
         $creatorColumn = config('issuing.creator_column');
         $updatorColumn = config('issuing.updator_column');
         $deletorColumn = config('issuing.deletor_column');

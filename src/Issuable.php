@@ -1,6 +1,6 @@
 <?php
 
-namespace DerEffi\Issuing\Helper;
+namespace DerEffi\Issuing;
 
 use Illuminate\Support\Facades\Auth;
 
