@@ -7,13 +7,17 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "DerEffi\\Issuing\\": "src/"
+            "Dereffi\\Issuing\\": "src/"
+        }
+    },"autoload-dev": {
+        "psr-4": {
+            "Dereffi\\Issuing\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "DerEffi\\Issuing\\IssuingServiceProvider"
+                "Dereffi\\Issuing\\IssuingServiceProvider"
             ],
             "aliases": {
                 "DerEffi\\Issuable": "DerEffi\\Issuing\\Issuable",
